@@ -9,7 +9,6 @@
                 size: 'sm',
                 controller: 'ModalNewRoomCtrl as modalNewRoom'
             });
-            Room.addRoomByName(roomName);
         }
     }
 

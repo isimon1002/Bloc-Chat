@@ -7,7 +7,7 @@
   <form name="addRoom">
     <label for="roomName">Name</label>
     <input type="text" name="roomName" ng-model="roomName">
-    <input type="submit" value="Add" class="btn btn-xs btn-primary" ng-submit="modalNewRoom.submit()">
+    <input type="submit" value="Add" class="btn btn-xs btn-primary" ng-submit="modalNewRoom.submit(roomName)">
     <input type="submit" value="Cancel" class="btn btn-xs btn-primary" ng-submit="modalNewRoom.cancel()">
   </form>
 </div>
