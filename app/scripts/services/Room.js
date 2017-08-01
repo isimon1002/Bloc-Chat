@@ -5,14 +5,10 @@
     var rooms = $firebaseArray(ref);
 
     Room.all = rooms;
-<<<<<<< HEAD
-=======
     Room.addRoomByName = function(roomName) {
       rooms.$add({'roomName':roomName});
-
     };
 
->>>>>>> checkpoint3
 
     return Room;
   }
