@@ -1,8 +1,8 @@
 (function() {
     function ModalNewRoomCtrl($uibModalInstance, Room) {
 
-    this.submit = function(roomName) {
-      Room.addRoomByName(roomName);
+    this.submit = function(newRoomName) {
+      Room.addRoomByName(newRoomName);
       $uibModalInstance.close();
     };
 
