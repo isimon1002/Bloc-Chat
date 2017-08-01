@@ -12,6 +12,7 @@
 
   }
 
+
   angular
     .module('blocChat')
     .controller('ModalNewRoomCtrl', ModalNewRoomCtrl);
