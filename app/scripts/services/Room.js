@@ -8,7 +8,7 @@
     Room.addRoomByName = function(roomName) {
       rooms.$add({'roomName':roomName});
 
-    }
+    };
 
 
     return Room;
