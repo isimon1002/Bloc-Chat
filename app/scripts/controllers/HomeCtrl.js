@@ -1,8 +1,4 @@
 (function() {
-<<<<<<< HEAD
-    function HomeCtrl($scope, Room) {
-        $scope.allRooms = Room.all
-=======
     function HomeCtrl(Room, $uibModal) {
         this.allRooms = Room.all;
         this.addRoom = function(roomName) {
@@ -14,14 +10,18 @@
                 controller: 'ModalNewRoomCtrl as modalNewRoom'
             });
         }
->>>>>>> checkpoint3
+        this.currentRoom = '';
+        this.setCurrentRoom = function (room) {
+            console.log(room);
+            this.currentRoom = room;
+            //sdocument.write(roomName);
+            //return roomName;
+
+        };
     }
+
 
     angular
         .module('blocChat')
-<<<<<<< HEAD
-        .controller('HomeCtrl', ['$scope','Room', HomeCtrl]);
-=======
         .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
->>>>>>> checkpoint3
 })();

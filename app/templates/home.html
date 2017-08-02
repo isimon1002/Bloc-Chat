@@ -1,16 +1,15 @@
 <div class="list">
   <h1 class="header">Bloc Chat</h1>
-<<<<<<< HEAD
-
-  <div class="room-list" ng-repeat="room in allRooms">
-    <div class="room-name">
-      <p>{{room.$value}}</p>
-=======
   <a href="#" ng-click="home.addRoom()">Add Room</a>
   <div class="room-list" ng-repeat="room in home.allRooms">
     <div class="room-name">
-      <p>{{room.roomName}}</p>
->>>>>>> checkpoint3
+      <a href="#" ng-click="home.setCurrentRoom(room)">{{room.roomName}}</a>
     </div>
   </div>
+</div>
+<div class="selected-room column fourth">
+   <h1 class="room-title"> {{home.currentRoom.roomName}}</h1>
+   <h3 class="username">{{home.currentRoom.Username}}</h3>
+   <h3 class="message">{{home.currentRoom.Content}}</h3>
+   <h3 class="time">{{home.currentRoom.sentAt}}</h3>
 </div>

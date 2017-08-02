@@ -18,4 +18,30 @@ html {
     background-color: #EEEEEE;
     height: 100%;
     width: 25%;
- }
+}
+
+.room-title {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+
+.username {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
+.message {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    color: grey;
+}
+
+.time {
+    position: absolute;
+    top: 10%;
+    left: 95%;
+    color: grey;
+}
