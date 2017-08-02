@@ -10,7 +10,16 @@
                 controller: 'ModalNewRoomCtrl as modalNewRoom'
             });
         }
+        this.currentRoom = '';
+        this.setCurrentRoom = function (room) {
+            console.log(room);
+            this.currentRoom = room;
+            //sdocument.write(roomName);
+            //return roomName;
+
+        };
     }
+
 
     angular
         .module('blocChat')
