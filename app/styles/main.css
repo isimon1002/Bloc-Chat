@@ -18,7 +18,7 @@ html {
     background-color: #EEEEEE;
     height: 100%;
     width: 25%;
-    position: fixed;
+    position: relative;
     top: 0px;
     left: 0px;
     text-align: left;
