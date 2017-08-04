@@ -50,3 +50,15 @@ html {
     left: 95%;
     color: grey;
 }
+
+.messages {
+    position: absolute;
+    left: 50%;
+    top: 95%;
+}
+
+.message-field {
+    position: absolute;
+    left: 25%;
+    top: 100%;
+}
