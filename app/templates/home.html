@@ -7,13 +7,15 @@
     </div>
   </div>
 </div>
-<div class="message-field">
-    <input type="text" name="input" placeholder="Type your message here" class="message-box" ng-model="home.newMessage.content" style="width:500px;">
-    <button class="btn-new-message" type="button" ng-click="home.sendMessage(); Message.send(newMessage)">Send message</button>
+<div class="message-field" ng-show="home.hide">
+    <input type="text" name="input" placeholder="Type your message here" class="message-box" ng-model="newMessage" style="width:500px;">
+    <button class="btn-new-message" type="button" ng-click="home.sendMessage(newMessage)">Send message</button>
 </div>
 <div class="selected-room column fourth">
    <h1 class="room-title"> {{home.currentRoom.roomName}}</h1>
-   <h3 class="username">{{home.currentRoom.Username}}</h3>
-   <h3 class="message">{{home.currentRoom.Content}}</h3>
-   <h3 class="time">{{home.currentRoom.sentAt}}</h3>
+   <div class="data" ng-repeat='messages in home.roomMessages'>
+    <h3 class="username">{{messages.userName}}</h3>
+    <h3 class="message" ng-repeat="newMessage in home.roomMesssages">{{messages.message}}</h3>
+    <h3 class="time" ng-repeat="newMessage in home.roomMesssages">{{messages.sentAt}}</h3>
+ </div>
 </div>
