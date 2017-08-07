@@ -2,8 +2,10 @@
     function ModalNewRoomCtrl($uibModalInstance, Room) {
 
     this.submit = function(newRoomName) {
-      Room.addRoomByName(newRoomName);
+      Room.addRoomByName(newRoomName)
+      if(newRoomName){
       $uibModalInstance.close();
+    }
     };
 
     this.cancel = function() {

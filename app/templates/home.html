@@ -1,7 +1,9 @@
 <div class="list">
   <h1 class="header">Bloc Chat</h1>
-  <a href="#" ng-click="home.addRoom()">Add Room</a>
-  <div class="room-list" ng-repeat="room in home.allRooms">
+  <div class="row new-chat-room">
+    <a href="#" ng-click="home.addRoom()">Add Room</a>
+  </div>
+  <div class="room-list column fourth" ng-repeat="room in home.allRooms">
     <div class="room-name">
       <a href="#" ng-click="home.setCurrentRoom(room)">{{room.roomName}}</a>
     </div>
@@ -13,9 +15,9 @@
 </div>
 <div class="selected-room column fourth">
    <h1 class="room-title"> {{home.currentRoom.roomName}}</h1>
-   <div class="data" ng-repeat='messages in home.roomMessages'>
-    <h3 class="username">{{messages.userName}}</h3>
-    <h3 class="message" ng-repeat="newMessage in home.roomMesssages">{{messages.message}}</h3>
-    <h3 class="time" ng-repeat="newMessage in home.roomMesssages">{{messages.sentAt}}</h3>
+   <div class="data" ng-repeat='message in home.roomMessages'>
+    <h3 class="username">{{message.userName}}</h3>
+    <h3 class="message"> {{message.message}}</h3>
+    <h3 class="time">{{message.sentAt | date : "shortTime"}}</h3>
  </div>
 </div>

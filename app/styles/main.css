@@ -18,7 +18,7 @@ html {
     background-color: #EEEEEE;
     height: 100%;
     width: 25%;
-    position: relative;
+    position: fixed;
     top: 0px;
     left: 0px;
     text-align: left;
@@ -31,34 +31,50 @@ html {
     left: 50%;
 }
 
-.username {
-    position: absolute;
-    top: 10%;
-    left: 50%;
+.selected-room {
+    position: fixed;
+    top: 0px;
+    left: 25%;
+    height: 100%;
+    width: 75%;
+    background-color: white;
+    z-index: 1;
+    overflow: scroll;
 }
 
-.message {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    color: grey;
+
+.data {
+    top: 100px;
+    padding-right: 10px;
+}
+
+.username {
+    font-weight: bold;
 }
 
 .time {
-    position: absolute;
-    top: 10%;
-    left: 95%;
+    float: right;
+    padding-right: 100px;
     color: grey;
 }
 
-.messages {
-    position: absolute;
-    left: 50%;
-    top: 95%;
+.username .time {
+    display: inline-block;
+}
+
+.message {
+    color: grey;
+    padding-bottom: 5px;
+    display: inline-block;
 }
 
 .message-field {
-    position: absolute;
-    left: 25%;
-    top: 100%;
+    bottom: 0;
+    left: 0px;
+    width: 25%;
+    padding-bottom: 5px;
+    position: fixed;
+    display: inline-block;
+    overflow: scroll;
+    text-align: center;
 }

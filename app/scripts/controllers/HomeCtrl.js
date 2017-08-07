@@ -21,6 +21,7 @@
             console.log(room);
             this.currentRoom = room;
             this.roomMessages = Message.getByRoomId(this.currentRoom.$id);
+            console.log(this.roomMessages);
             this.hide=true;
             //sdocument.write(roomName);
             //return roomName;
