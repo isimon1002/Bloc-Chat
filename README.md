@@ -1,2 +1,2 @@
-
+BlocChat was my third project with Bloc.  It is a slack like messaging application.  In its current form it allows users to create chatrooms and message send each other messages once they sign up by creating a username for themselves.  This application uses firebase to record the data and sync the messages to allow for real time conversations.  
 ![solarized palette](https://github.com/isimon1002/isimon1002.github.io/blob/master/img/BlocChat%20Room.PNG)
